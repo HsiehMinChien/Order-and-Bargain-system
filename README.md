@@ -6,7 +6,7 @@ An system for products order and bargain.
 
 ## Requirements
 
-PHP Version 7.0.19 
+PHP Version 7.0.19  
 MySQL Version 5.6.35-81.0 - Percona Server 
 
 ## DEMO system
