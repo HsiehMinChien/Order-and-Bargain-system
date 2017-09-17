@@ -18,8 +18,8 @@ http://jeffhsieh.byethost31.com/login.php
 
 After install PHP and MySQL (Or go to apply an PHP+MySQL server for test) 
 - Modify the setting in config.php:
-  (1) $db_host = 'Your MySQL hostname';     (eg. localhost) 
-  (2) $db_user = 'Your MySQL account';      (eg. Test)  
+  (1) $db_host = 'Your MySQL hostname';     (eg. localhost)   
+  (2) $db_user = 'Your MySQL account';      (eg. Test)    
   (3) $db_pass = 'Your MySQL password';     (eg. Testonly)  
   (4) $db_name = 'Your MySQL database';     (eg. DBDB)  
   (5) $tb_name = 'Your first table name';   (eg. Table1)  
