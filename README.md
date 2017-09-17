@@ -42,50 +42,50 @@ After install PHP and MySQL (Or go to apply an server which support PHP+MySQL fo
 
 - Create three tables in your MySQL database.   
 Table 1   
-+-----------+------------------+------+-----+-------------------+-----------------------------+
-| Field     | Type             | Null | Key | Default           | Extra                       |
-+-----------+------------------+------+-----+-------------------+-----------------------------+
-| userid    | int(10) unsigned | NO   | PRI | NULL              | auto_increment              |
-| email     | varchar(255)     | NO   |     | NULL              |                             |
-| password  | varchar(255)     | NO   |     | NULL              |                             |
-| guid      | varchar(32)      | YES  |     | NULL              |                             |
-| authority | tinyint(4)       | YES  |     | NULL              |                             |
-| Time      | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
-+-----------+------------------+------+-----+-------------------+-----------------------------+ 
++-----------+------------------+------+-----+-------------------+-----------------------------+   
+| Field     | Type             | Null | Key | Default           | Extra                       |   
++-----------+------------------+------+-----+-------------------+-----------------------------+   
+| userid    | int(10) unsigned | NO   | PRI | NULL              | auto_increment              |   
+| email     | varchar(255)     | NO   |     | NULL              |                             |   
+| password  | varchar(255)     | NO   |     | NULL              |                             |   
+| guid      | varchar(32)      | YES  |     | NULL              |                             |   
+| authority | tinyint(4)       | YES  |     | NULL              |                             |   
+| Time      | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
++-----------+------------------+------+-----+-------------------+-----------------------------+     
 
 Table 2   
-+---------------+------------------+------+-----+-------------------+-----------------------------+
-| Field         | Type             | Null | Key | Default           | Extra                       |
-+---------------+------------------+------+-----+-------------------+-----------------------------+
-| userid        | int(11) unsigned | NO   | PRI | NULL              | auto_increment              |
-| P_name        | varchar(255)     | NO   |     | NULL              |                             |
-| P_description | varchar(2500)    | NO   |     | NULL              |                             |
-| P_amount      | int(11)          | NO   |     | NULL              |                             |
-| P_in_price    | int(11)          | NO   |     | NULL              |                             |
-| P_out_price   | int(11)          | NO   |     | NULL              |                             |
-| P_comment     | varchar(2500)    | YES  |     | NULL              |                             |
-| email         | varchar(255)     | NO   |     | NULL              |                             |
-| P_editor      | varchar(255)     | NO   |     | NULL              |                             |
-| Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
-+---------------+------------------+------+-----+-------------------+-----------------------------+ 
++---------------+------------------+------+-----+-------------------+-----------------------------+   
+| Field         | Type             | Null | Key | Default           | Extra                       |   
++---------------+------------------+------+-----+-------------------+-----------------------------+   
+| userid        | int(11) unsigned | NO   | PRI | NULL              | auto_increment              |   
+| P_name        | varchar(255)     | NO   |     | NULL              |                             |   
+| P_description | varchar(2500)    | NO   |     | NULL              |                             |   
+| P_amount      | int(11)          | NO   |     | NULL              |                             |   
+| P_in_price    | int(11)          | NO   |     | NULL              |                             |   
+| P_out_price   | int(11)          | NO   |     | NULL              |                             |   
+| P_comment     | varchar(2500)    | YES  |     | NULL              |                             |   
+| email         | varchar(255)     | NO   |     | NULL              |                             |   
+| P_editor      | varchar(255)     | NO   |     | NULL              |                             |   
+| Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
++---------------+------------------+------+-----+-------------------+-----------------------------+     
  
 Table 3   
-+---------------+------------------+------+-----+-------------------+-----------------------------+
-| Field         | Type             | Null | Key | Default           | Extra                       |
-+---------------+------------------+------+-----+-------------------+-----------------------------+
-| userid        | int(11) unsigned | NO   | PRI | NULL              | auto_increment              |
-| nex_userid    | int(11)          | YES  |     | NULL              |                             |
-| pre_userid    | int(11) unsigned | YES  |     | NULL              |                             |
-| P_userid      | int(11) unsigned | NO   |     | NULL              |                             |
-| P_name        | varchar(255)     | NO   |     | NULL              |                             |
-| P_description | varchar(2500)    | NO   |     | NULL              |                             |
-| P_amount      | int(11)          | NO   |     | NULL              |                             |
-| P_total_price | int(11)          | NO   |     | NULL              |                             |
-| P_comment     | varchar(2500)    | YES  |     | NULL              |                             |
-| C_email       | varchar(255)     | NO   |     | NULL              |                             |
-| editor        | varchar(255)     | YES  |     | NULL              |                             |
-| status        | varchar(255)     | YES  |     | NULL              |                             |
-| Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
++---------------+------------------+------+-----+-------------------+-----------------------------+   
+| Field         | Type             | Null | Key | Default           | Extra                       |   
++---------------+------------------+------+-----+-------------------+-----------------------------+   
+| userid        | int(11) unsigned | NO   | PRI | NULL              | auto_increment              |   
+| nex_userid    | int(11)          | YES  |     | NULL              |                             |   
+| pre_userid    | int(11) unsigned | YES  |     | NULL              |                             |   
+| P_userid      | int(11) unsigned | NO   |     | NULL              |                             |   
+| P_name        | varchar(255)     | NO   |     | NULL              |                             |   
+| P_description | varchar(2500)    | NO   |     | NULL              |                             |   
+| P_amount      | int(11)          | NO   |     | NULL              |                             |   
+| P_total_price | int(11)          | NO   |     | NULL              |                             |   
+| P_comment     | varchar(2500)    | YES  |     | NULL              |                             |   
+| C_email       | varchar(255)     | NO   |     | NULL              |                             |   
+| editor        | varchar(255)     | YES  |     | NULL              |                             |   
+| status        | varchar(255)     | YES  |     | NULL              |                             |   
+| Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
 
 Then you can start to use this system.
