@@ -17,7 +17,7 @@ http://jeffhsieh.byethost31.com/login.php
 ## How to build this system?
 
 After install PHP and MySQL (Or go to apply an PHP+MySQL server for test) 
-- Modify the setting in config.php:
+- Modify the setting in config.php:   
   (1) $db_host = 'Your MySQL hostname';     (eg. localhost)   
   (2) $db_user = 'Your MySQL account';      (eg. Test)    
   (3) $db_pass = 'Your MySQL password';     (eg. Testonly)  
