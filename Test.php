@@ -37,5 +37,6 @@ mysql_close($con);
 2. <a href="create_new_product.php" target="_blank">Add News Products</a><br>
 3. <a href="modify_product.php" target="_blank">Update Products Information</a><br>
 4. <a href="list_all_order.php" target="_blank">List All Orders</a><br>
+5. <a href="order_overdue.php" target="_blank">Check Overdue Orders</a><br>
 </body>
 </html>

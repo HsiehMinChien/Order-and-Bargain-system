@@ -22,6 +22,7 @@ III. Features for Salesperson:
 - Update products information.    
 - List all products which be built in this system.    
 - List all orders which be created from every customers.    
+- List the overdue orders.
 
 ## DEMO system
 
