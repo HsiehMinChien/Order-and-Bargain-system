@@ -72,7 +72,7 @@ if ( $check_email_take_action == 1 ) {
                 if ($j == 0) {
                     echo "<th>";
                     echo "<form action='order_products.php' method='post' target='_blank'>";
-                    echo "<input type='radio' name='action' value='Order'> Order<br>";
+                    echo "<input type='radio' name='action' value='Order' checked='true'> Order<br>";
                     echo "<input type='radio' name='action' value='Bargain'> Bargain<br>";
                     echo "<input type='hidden' name='P_order' value='".$data[$j]."'>";
                     echo "<input type='submit' name='submit' value='Submit'>";

@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head><title>Create New Account (DEMO System)</title>
+<script src="check_fill.js"></script>
 </head>
 <body>
 <?php
@@ -63,12 +64,15 @@ for ( $i=0 ; $i<4 ; $i++) {
 */
 ?><br>
 <p><b> Please fill following content to create new account </b></p>
-<form action="check_create_account.php" method="POST">
+<form name="reg" action="check_create_account.php" method="POST">
 - Account:<br>
 <input type="text" name="A_name">
 <br><br>
 - Password:<br>
-<input type="text" name="A_password">
+<input type="password" name="A_password">
+<br><br>
+- Confirm Password:<br>
+<input type="password" name="A_password_confirm">
 <br><br>
 - Identify:<br>
 <input type='radio' name='identity' value='sales'> Customer Service Staff<br>
@@ -76,7 +80,9 @@ for ( $i=0 ; $i<4 ; $i++) {
 <br>
 - Verification code:<br>
 <input type="value" name="input_v_num"> <?php echo $v1[0].$v1[1].$v1[2].$v1[3]; ?><br>
-<input type="submit" name="submit" value="Create"><br>
+<!-- <input type="submit" name="submit" value="Create"><br> -->
+<input type="button" value="Create" onClick="check_create_account()">
+<input type="reset" value="Reset">
 <input type="hidden" name="auto_v_num" value="<?php echo $v; ?>">
 </form>
 </body>

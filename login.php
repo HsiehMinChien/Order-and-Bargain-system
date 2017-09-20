@@ -36,6 +36,7 @@ legend {
     }
 
 </style>
+<script src="check_fill.js"></script>
 </head>
 <body>
 
@@ -100,7 +101,7 @@ for ( $i=0 ; $i<4 ; $i++) {
 ?>
 <b> Welcome to the login page, please typing your account and password. </b><br><br>
 
-<form action="actionlogin.php" method="POST">
+<form name="reg" action="actionlogin.php" method="POST">
 <fieldset bgcolor=#C9FFC9>
 <legend>LOGIN</legend>
 <label for="input_username">- Account:<br>
@@ -111,7 +112,8 @@ for ( $i=0 ; $i<4 ; $i++) {
 <br>
 <label for="input_v">- Verification code<br>
 <input type="value" name="input_v_num" id="input_v"> <?php echo $v1[0].$v1[1].$v1[2].$v1[3]; ?><br>
-<input type="submit" name="submit" value="Login">
+<input type="button" value="Login" onClick="check_login()">
+<input type="reset" value="Reset">
 <input type="hidden" name="refer" value="<?php echo (isset($_GET['refer'])) ? $_GET['refer'] : 'Test.php'; ?>">
 <input type="hidden" name="auto_v_num" value="<?php echo $v; ?>">
 </fieldset>

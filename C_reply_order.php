@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head><title>Customer Reply Order Page (DEMO System)</title>
+<script src="check_fill.js"></script>
 </head>
 <body>
 <?php
@@ -104,7 +105,7 @@ if ( $check_email_take_action == 1 ) {
     echo "</table>";
 
     echo "<br>";
-    echo "<form action='C_reply_order_done.php' method='post'>";
+    echo "<form name='reg' action='C_reply_order_done.php' method='post'>";
     echo "Quantity to Order: ";
     echo "<input type='value' name='P_amount' value='".$data[6]."'><br>";
     echo "Expectation Price: ";
@@ -115,7 +116,9 @@ if ( $check_email_take_action == 1 ) {
     echo "<input type='radio' name='status' value='Order'> Order it<br>";
     echo "<input type='radio' name='status' value='Bargain'> Bargain Again<br>";
     echo "<input type='radio' name='status' value='Cancel'> Cancel Order<br>";
-    echo "<input type='submit' name='submit' value='Submit'>";
+    //echo "<input type='submit' name='submit' value='Submit'>";
+    echo "<input type='button' value='Submit' onClick='check_handle_order()'>";
+    echo "<input type='reset' value='Reset'>";
     echo "<input type='hidden' name='P_order' value='".$ticket."'><br>";
     echo "</form>";
 

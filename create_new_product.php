@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head><title>Create New Products (DEMO System)</title>
+<script src="check_fill.js"></script>
 </head>
 <body>
 <?PHP
@@ -30,7 +31,7 @@ if (mysql_num_rows($result))
 
 ?>
 <p><b> Please fill following content to create new product </b></p>
-<form action="check_create_product.php" method="POST">
+<form name="reg" action="check_create_product.php" method="POST">
 - Product Name<br>
 <input type="text" name="P_name">
 <br>
@@ -49,7 +50,9 @@ if (mysql_num_rows($result))
 - Comment<br>
 <input type="text" name="P_comment" style="width:300px; height:100px;">
 <br>
-<input type="submit" name="submit" value="Create"><br>
+<!-- <input type="submit" name="submit" value="Create"><br> -->
+<input type="button" value="Create" onClick="check_create_product()">
+<input type="reset" value="Reset">
 <input type="hidden" name="email" value="<?php echo $email; ?>">
 </form>
 </body>

@@ -1,13 +1,12 @@
 <!DOCTYPE>
 <html>
 <head><title>Handle Order (DEMO System)</title>
+<script src="check_fill.js"></script>
 </head>
 <body>
 <?php
 
 require('config.php');
-$table_name = "products";
-$table_name1 = "test1";
 $ticket = $_POST['P_order'];
 $title = array("Ticket","Product Name","Product Description","Quantity in Stock","Cost","Price","Comment","Creator", "Editor", "Create/Modify Time");
 $title1 = array( "", "", "", "Ticket of Product", "Product Name", "Product Description", "Quantity to Order", "Total Price", "Comment", "Creator", "Editor", "Status", "Create/Modify Time");
@@ -96,7 +95,7 @@ echo "</tr>";
 
     echo "</table>";
     echo "<br>";
-    echo "<form action='handle_order_done.php' method='post'>";
+    echo "<form name='reg' action='handle_order_done.php' method='post'>";
     echo "Quantity to Order: ";
     echo "<input type='value' name='P_amount' value='".$data[6]."'><br>";
     echo "Expectation Price: ";
@@ -107,7 +106,9 @@ echo "</tr>";
     echo "<input type='radio' name='status' value='Shipping'> Shipping<br>";
     echo "<input type='radio' name='status' value='Has been handled'> Has been handled<br>";
     echo "<input type='radio' name='status' value='Cancel'> Cancel<br>";
-    echo "<input type='submit' name='submit' value='Submit'>";
+    //echo "<input type='submit' name='submit' value='Submit'>";
+    echo "<input type='button' value='Submit' onClick='check_handle_order()'>";
+    echo "<input type='reset' value='Reset'>";
     echo "<input type='hidden' name='P_order' value='".$ticket."'><br>";
     echo "</form>";
 

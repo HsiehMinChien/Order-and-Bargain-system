@@ -36,17 +36,18 @@ if ( mysql_num_rows($result1) ) {
     <b>List orders which be created more than</b><br>
 
     <form action='<?php echo $_SERVER['PHP_SELF'] ?>' method='post'>
-    <input type='radio' name='action' value='0'> Zero day</option><br>
-    <input type='radio' name='action' value='1'> One day</option><br>
-    <input type='radio' name='action' value='2'> Two day</option><br>
-    <input type='radio' name='action' value='3'> Three day</option><br>
-    <input type='radio' name='action' value='4'> Four day</option><br>
-    <input type='radio' name='action' value='5'> Five days</option><br>
-    <input type='radio' name='action' value='6'> Six days</option><br>
-    <input type='radio' name='action' value='7'> One week</option><br>
-    <input type='radio' name='action' value='14'> Two weeks</option><br>
-    <input type='radio' name='action' value='21'> There weeks</option><br>
-    <input type='radio' name='action' value='30'> One month</option><br>
+    <select name='action'>
+    <option value='0'> Zero day</option>
+    <option value='1'> One day</option>
+    <option value='2'> Two day</option>
+    <option value='3'> Three day</option>
+    <option value='4'> Four day</option>
+    <option value='5'> Five days</option>
+    <option value='6'> Six days</option>
+    <option value='7'> One week</option>
+    <option value='14'> Two weeks</option>
+    <option value='21'> There weeks</option>
+    <option value='30'> One month</option>
     </select><br>
     <input type='submit' name='submit' value='Submit'>
     </form>

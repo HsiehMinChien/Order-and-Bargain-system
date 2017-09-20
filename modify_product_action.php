@@ -1,6 +1,8 @@
 <!DOCTYPE>
 <html>
 <head>
+<title>Update Product information</title>
+<script src="check_fill.js"></script>
 </head>
 <body>
 <p>Product that you select: </p>
@@ -47,26 +49,28 @@ if ($check_email_take_action == 1) {
 }
 
 ?>
-<form action="modify_product_action_2.php" method="POST">
-- 商品名稱<br>
+<form name="reg" action="modify_product_action_2.php" method="POST">
+- Product Name<br>
 <input type="text" name="P_name" value="<?php echo $data[1]; ?>">
 <br>
-- 商品說明<br>
+- Product Description<br>
 <input type="text" name="P_description" style="width:300px; height:100px;" value="<?php echo $data[2]; ?>">
 <br>
-- 商品數量<br>
+- Quantity of Product<br>
 <input type="value" name="P_amount" value="<?php echo $data[3]; ?>">
 <br>
-- 單品成本<br>
+- Cost<br>
 <input type="value" name="P_in_price" value="<?php echo $data[4]; ?>">
 <br>
-- 出售單價<br>
+- Price<br>
 <input type="value" name="P_out_price" value="<?php echo $data[5]; ?>">
 <br>
-- 備註<br>
+- Comment<br>
 <input type="text" name="P_comment" style="width:300px; height:100px;" value="<?php echo $data[6]; ?>">
 <br>
-<input type="submit" name="submit" value="Submit"><br>
+<!-- <input type="submit" name="submit" value="Submit"><br> -->
+<input type="button" value="Submit" onClick="check_update_pro_info_action()">
+<input type="reset" value="Reset">
 <input type="hidden" name="P_editor" value="<?php echo $email; ?>">
 <input type="hidden" name="ticket" value="<?php echo $data[0]; ?>">
 </form>

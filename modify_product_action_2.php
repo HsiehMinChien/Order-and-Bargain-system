@@ -5,7 +5,6 @@
 <body>
 <?php
 require('config.php');
-$table_name = "products";
 $check_ticket_take_action = 0;
 $check_email_take_action = 0;
 
@@ -86,7 +85,7 @@ if ( $_POST['P_comment'] == "" ) {
 
 if ( $check_ticket_take_action == 1 ) {
 
-    $query2 = "UPDATE products SET 
+    $query2 = "UPDATE ".$tb_name1." SET 
     P_name='".$P_name."', 
     P_description='".$P_description."',
     P_amount=".$P_amount.",
