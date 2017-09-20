@@ -12,6 +12,7 @@ MySQL Version 5.6.35-81.0
 ## System feature
 I. Common feature:  
 - For salesperson and customer to creating their own account.   
+- Add an mechanism for checking input data when user create product, update product information, order product, or reply orders.     
 
 II. Features for Customer:  
 - List all products to order it or bargain the price.   
@@ -42,7 +43,8 @@ After install PHP and MySQL (Or go to apply an server which support PHP+MySQL fo
   (7) $tb_name2 = 'Your third table name';  (eg. Table3)  
 
 - Create three tables in your MySQL database.   
-Table 1   
+
+Table 1 (First Table)       
 +-----------+------------------+------+-----+-------------------+-----------------------------+   
 | Field     | Type             | Null | Key | Default           | Extra                       |   
 +-----------+------------------+------+-----+-------------------+-----------------------------+   
@@ -54,7 +56,7 @@ Table 1
 | Time      | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
 +-----------+------------------+------+-----+-------------------+-----------------------------+     
 
-Table 2   
+Table 2 (Second Table)         
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
 | Field         | Type             | Null | Key | Default           | Extra                       |   
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
@@ -70,7 +72,7 @@ Table 2
 | Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
 +---------------+------------------+------+-----+-------------------+-----------------------------+     
  
-Table 3   
+Table 3 (Third Table)      
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
 | Field         | Type             | Null | Key | Default           | Extra                       |   
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
@@ -89,5 +91,6 @@ Table 3
 | Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
 
+- Set the MySQL accout can execute SELECT, INSERT, UPDATE function on table 1-3.
 Then you can start to use this system.
 
