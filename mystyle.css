@@ -1,0 +1,28 @@
+.wrap
+{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+    background-color: #C5F7F7;
+    height: auto;
+    width: 740px;
+}
+    
+.bar
+{
+    background-color: #0D014E;
+    width: 119px;
+    height: auto;
+    margin-right: 3px;
+    float: left;
+    position: relative;
+    color: #F6F7F2;
+    text-align: center;
+    padding-top: 1px;
+}
+    
+button
+{
+    font-size: 1.5em; float: left;
+    margin-right: 10px;
+}
