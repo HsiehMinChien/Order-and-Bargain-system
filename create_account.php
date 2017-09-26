@@ -1,7 +1,9 @@
 <!DOCTYPE>
 <html>
 <head><title>Create New Account (DEMO System)</title>
-<script src="check_fill.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="check_create_account_form.js"></script>
+<link rel="stylesheet" type="text/css" href="format.css">
 </head>
 <body>
 <?php
@@ -65,25 +67,29 @@ for ( $i=0 ; $i<4 ; $i++) {
 ?><br>
 <p><b> Please fill following content to create new account </b></p>
 <form name="reg" action="check_create_account.php" method="POST">
+<fieldset bgcolor=#C9FFC9>
+<legend>Create Account</legend>
 - Account:<br>
-<input type="text" name="A_name">
+<input type="text" name="A_name" class="form-control" placeholder="Type account">
+<button type="button" class="btn btn-primary" id="email-check">Check This Account</button>
 <br><br>
 - Password:<br>
-<input type="password" name="A_password">
+<input type="password" name="A_password" placeholder="Type password">
 <br><br>
 - Confirm Password:<br>
-<input type="password" name="A_password_confirm">
+<input type="password" name="A_password_confirm" placeholder="Type password">
 <br><br>
 - Identify:<br>
 <input type='radio' name='identity' value='sales'> Customer Service Staff<br>
 <input type='radio' name='identity' value='customer'> Customer<br>
 <br>
 - Verification code:<br>
-<input type="value" name="input_v_num"> <?php echo $v1[0].$v1[1].$v1[2].$v1[3]; ?><br>
+<input type="value" name="input_v_num" placeholder="Type verification code"> <?php echo $v1[0].$v1[1].$v1[2].$v1[3]; ?><br>
 <!-- <input type="submit" name="submit" value="Create"><br> -->
 <input type="button" value="Create" onClick="check_create_account()">
 <input type="reset" value="Reset">
 <input type="hidden" name="auto_v_num" value="<?php echo $v; ?>">
+</fieldset>
 </form>
 </body>
 </html>

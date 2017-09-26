@@ -105,13 +105,13 @@ for ( $i=0 ; $i<4 ; $i++) {
 <fieldset bgcolor=#C9FFC9>
 <legend>LOGIN</legend>
 <label for="input_username">- Account:<br>
-<input type="text" name="email" id="input_username">
+<input type="text" name="email" id="input_username" placeholder="Type account">
 <br>
 <label for="input_userpassword">- Password:<br>
-<input type="password" name="password" id="input_userpassword">
+<input type="password" name="password" id="input_userpassword" placeholder="Type password">
 <br>
 <label for="input_v">- Verification code<br>
-<input type="value" name="input_v_num" id="input_v"> <?php echo $v1[0].$v1[1].$v1[2].$v1[3]; ?><br>
+<input type="value" name="input_v_num" id="input_v" placeholder="Type verification code"> <?php echo $v1[0].$v1[1].$v1[2].$v1[3]; ?><br>
 <input type="button" value="Login" onClick="check_login()">
 <input type="reset" value="Reset">
 <input type="hidden" name="refer" value="<?php echo (isset($_GET['refer'])) ? $_GET['refer'] : 'Test.php'; ?>">
