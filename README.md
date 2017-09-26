@@ -93,9 +93,10 @@ Table 3 (Third Table)
 | Time          | timestamp        | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |   
 +---------------+------------------+------+-----+-------------------+-----------------------------+   
 
-- Set the MySQL accout can execute SELECT, INSERT, UPDATE function on table 1-3.
+- Set the MySQL account can execute SELECT, INSERT, UPDATE function on table 1-3.
 Then you can start to use this system.
 
 - For account check mechanism:    
   You have to make sure location of check file then modify url in script.
-
+  e.g The file location: http://localhost/check_account.php
+      Then modify url as '/check_account.php'.
