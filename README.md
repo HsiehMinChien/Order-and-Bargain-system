@@ -97,6 +97,6 @@ Table 3 (Third Table)
 Then you can start to use this system.
 
 - For account check mechanism:    
-  You have to make sure location of check file then modify url in script.
-  e.g The file location: http://localhost/check_account.php
-      Then modify url as '/check_account.php'.
+  You have to make sure location of check file then modify url in script.     
+  e.g The file location: http://localhost/check_account.php     
+      Then modify url as '/check_account.php'.      
