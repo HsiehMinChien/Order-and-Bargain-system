@@ -12,7 +12,8 @@ MySQL Version 5.6.35-81.0
 ## System feature
 I. Common feature:  
 - For salesperson and customer to creating their own account.   
-- Add an mechanism for checking input data when user create product, update product information, order product, or reply orders.     
+- Implement a mechanism for checking input data when user create product, update product information, order product, or reply orders.   
+- Implement a mechanism for checking this account be created or not.
 
 II. Features for Customer:  
 - List all products to order it or bargain the price.   
@@ -24,7 +25,7 @@ III. Features for Salesperson:
 - List all products which be built in this system.    
 - List all orders which be created from every customers.    
 - List the overdue orders.
-- Show all orders status.
+- List all orders status.
 
 ## DEMO system
 
@@ -94,4 +95,7 @@ Table 3 (Third Table)
 
 - Set the MySQL accout can execute SELECT, INSERT, UPDATE function on table 1-3.
 Then you can start to use this system.
+
+- For account check mechanism:    
+  You have to make sure location of check file then modify url in script.
 
