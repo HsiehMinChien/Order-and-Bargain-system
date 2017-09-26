@@ -24,58 +24,6 @@ function check_login()
     else reg.submit();
 }
 
-function check_create_account() {
-    var rule = /^\w+$/;
-    var rule2 = /^\w+(\d)+$/;
-    var rule3 = /^[A-Za-z]+[0-9]+((\d+)|(\w+))+$/;
-    var rule1 = /^\d+$/;
-    if(reg.A_name.value == "") 
-    {
-        alert("You forget to type account!");
-    }
-    else if(reg.A_password.value == "")
-    {
-        alert("You forget to type password!");
-    }
-    else if(reg.A_password_confirm.value == "")
-    {
-        alert("You forget to type the confirm password!");
-    }
-    else if(reg.A_password_confirm.value != reg.A_password.value)
-    {
-        alert("The password and confirm password are different!");
-    }
-    else if(reg.A_password.value == reg.A_name.value)
-    {
-        alert("The accout is the same as password, please modify it.");
-    }
-    else if( !rule3.test(reg.A_password.value) )
-    {
-        alert("This password doesn't match password rule!");
-    }
-    else if(reg.A_password.value.length < 6)
-    {
-        alert("At least mix six digits of arabic numbers and letter to set your password!");
-    }
-    else if(reg.identity.value == "")
-    {
-        alert("You forget to select your identity!");
-    }
-    else if(reg.input_v_num.value == "")
-    {
-        alert("You forget to fill verification code!");
-    }
-    else if( !rule1.test(reg.input_v_num.value) )
-    {
-        alert("You are not typing in arabic numbers for verification code!");
-    }
-    else if (reg.input_v_num.value.length != 4)
-    {
-        alert("The verification code is four digits!");
-    }
-    else reg.submit();
-}
-
 function check_create_product() {
     var rule = /^\w+$/;
     var rule2 = /^\w+(\d)+$/;
