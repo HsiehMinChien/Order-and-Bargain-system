@@ -26,6 +26,7 @@ III. Features for Salesperson:
 - List all orders which be created from every customers.    
 - List the overdue orders.
 - List all orders status.
+- Implement a mechanism for checking this product be created or not.
 
 ## DEMO system
 
