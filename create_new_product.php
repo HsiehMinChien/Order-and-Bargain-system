@@ -1,8 +1,9 @@
 <!DOCTYPE>
 <html>
 <head><title>Create New Products (DEMO System)</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="check_new_product_form.js"></script>
 <link rel="stylesheet" type="text/css" href="format.css">
-<script src="check_fill.js"></script>
 </head>
 <body>
 <?PHP
@@ -36,7 +37,8 @@ if (mysql_num_rows($result))
 <legend>Create New Product</legend>
 <form name="reg" action="check_create_product.php" method="POST">
 - Product Name<br>
-<input type="text" name="P_name" placeholder="Type Product Name">
+<input type="text" name="P_name" class="form-control" placeholder="Type Product Name">
+<button type="button" class="btn btn-primary" id="product-check">Check This Product</button>
 <br>
 - Product Description<br>
 <input type="text" name="P_description" style="width:300px; height:100px;" placeholder="Type Product Description">
