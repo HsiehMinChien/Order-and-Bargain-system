@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head><title>Create New Products (DEMO System)</title>
+<link rel="stylesheet" type="text/css" href="format.css">
 <script src="check_fill.js"></script>
 </head>
 <body>
@@ -30,13 +31,15 @@ if (mysql_num_rows($result))
 }
 
 ?>
-<p><b> Please fill following content to create new product </b></p>
+<h2> Please fill following content to create new product </h2>
+<fieldset bgcolor=#C9FFC9>
+<legend>Create New Product</legend>
 <form name="reg" action="check_create_product.php" method="POST">
 - Product Name<br>
-<input type="text" name="P_name">
+<input type="text" name="P_name" placeholder="Type Product Name">
 <br>
 - Product Description<br>
-<input type="text" name="P_description" style="width:300px; height:100px;">
+<input type="text" name="P_description" style="width:300px; height:100px;" placeholder="Type Product Description">
 <br>
 - Amount<br>
 <input type="value" name="P_amount" value="0">
@@ -48,12 +51,13 @@ if (mysql_num_rows($result))
 <input type="value" name="P_out_price" value="0">
 <br>
 - Comment<br>
-<input type="text" name="P_comment" style="width:300px; height:100px;">
+<input type="text" name="P_comment" style="width:300px; height:100px;" placeholder="Type Comment">
 <br>
 <!-- <input type="submit" name="submit" value="Create"><br> -->
 <input type="button" value="Create" onClick="check_create_product()">
 <input type="reset" value="Reset">
 <input type="hidden" name="email" value="<?php echo $email; ?>">
 </form>
+</fieldset>
 </body>
 </html>

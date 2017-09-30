@@ -101,7 +101,7 @@ echo "</tr>";
     echo "Expectation Price: ";
     echo "<input type='value' name='P_total_price' value='".$data[7]."'><br>";
     echo "Comment: ";
-    echo "<input type='text' name='P_comment' style='width:300px; height:100px;'><br>";
+    echo "<input type='text' name='P_comment' style='width:300px; height:100px;' placeholder='Type Comment'><br>";
     echo "<br>Status of Order: <br>";
     echo "<input type='radio' name='status' value='Shipping'> Shipping<br>";
     echo "<input type='radio' name='status' value='Has been handled'> Has been handled<br>";

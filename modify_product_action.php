@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Update Product information</title>
+<link rel="stylesheet" type="text/css" href="format.css">
 <script src="check_fill.js"></script>
 </head>
 <body>
@@ -49,6 +50,8 @@ if ($check_email_take_action == 1) {
 }
 
 ?>
+<fieldset bgcolor=#C9FFC9>
+<legend>Modify Product Information</legend>
 <form name="reg" action="modify_product_action_2.php" method="POST">
 - Product Name<br>
 <input type="text" name="P_name" value="<?php echo $data[1]; ?>">
@@ -74,6 +77,7 @@ if ($check_email_take_action == 1) {
 <input type="hidden" name="P_editor" value="<?php echo $email; ?>">
 <input type="hidden" name="ticket" value="<?php echo $data[0]; ?>">
 </form>
+</fieldset>
 </body>
 </html>
 

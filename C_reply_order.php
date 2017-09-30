@@ -111,7 +111,7 @@ if ( $check_email_take_action == 1 ) {
     echo "Expectation Price: ";
     echo "<input type='value' name='P_total_price' value='".$data[7]."'><br>";
     echo "Comment: ";
-    echo "<input type='text' name='P_comment' style='width:300px; height:100px;'><br>";
+    echo "<input type='text' name='P_comment' style='width:300px; height:100px;' placeholder='Type Comment'><br>";
     echo "<br>Reply Order: <br>";
     echo "<input type='radio' name='status' value='Order'> Order it<br>";
     echo "<input type='radio' name='status' value='Bargain'> Bargain Again<br>";

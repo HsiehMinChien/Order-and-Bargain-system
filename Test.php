@@ -1,5 +1,11 @@
 <html>
 <head><title>Sales Main Page for DEMO</title>
+<link rel="stylesheet" type="text/css" href="format.css">
+<style type="text/css">
+legend {
+  background-color:#94221E;
+}
+</style>
 </head>
 <body>
 <?PHP
@@ -33,11 +39,14 @@ mysql_close($con);
 ?>
 
 <br><p>Functional List</p>
+<fieldset bgcolor=#C9FFC9>
+<legend>Manager Area</legend>
 1. <a href="list_all_products.php" target="_blank">List All Products</a><br>
 2. <a href="create_new_product.php" target="_blank">Add News Products</a><br>
 3. <a href="modify_product.php" target="_blank">Update Products Information</a><br>
 4. <a href="list_all_order.php" target="_blank">List All Orders</a><br>
 5. <a href="order_overdue.php" target="_blank">Check Overdue Orders</a><br>
 6. <a href="Show_total_order_status.php" target="_blank">Show Total Orders Status</a><br>
+</fieldset>
 </body>
 </html>

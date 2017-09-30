@@ -2,8 +2,19 @@
 <html>
 <head>
 <title>Create New Product Confirm Page (DEMO System)</title>
+<link rel="stylesheet" type="text/css" href="format.css">
+<style type="text/css">
+fieldset {
+    width: 500px;
+		/*height: 800px;*/
+    margin: 0 auto;
+}
+</style>
 </head>
 <body>
+
+<fieldset bgcolor=#C9FFC9>
+<legend>Double Confirm </legend>
 <table style="width:100% border:3px #FFD382 dashed;" cellpadding='10' border='1'>
   <tr>
   <th bgcolor="gray">Product Name</th>
@@ -44,5 +55,6 @@
   <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
   <input type="submit" name="submit" value="Submit">
 </form>
+</fieldset>
 </body>
 </html>
