@@ -1,6 +1,14 @@
 <!DOCTYPE>
 <html>
 <head><title>Order Overdue</title>
+<link rel="stylesheet" type="text/css" href="format.css">
+<style type="text/css">
+fieldset {
+    width: 200px;
+		/*height: 800px;
+    margin: 0 auto;*/
+}
+</style>
 </head>
 <body>
 <?PHP
@@ -33,8 +41,10 @@ if ( mysql_num_rows($result1) ) {
 ?>
 
     <h2>This page for check all overdue orders.</h2>
-    <b>List orders which be created more than</b><br>
+    <b>List orders which be created more than</b><br><br>
 
+    <fieldset bgcolor=#C9FFC9>
+    <legend>Please Select</legend>
     <form action='<?php echo $_SERVER['PHP_SELF'] ?>' method='post'>
     <select name='action'>
     <option value='0'> Zero day</option>
@@ -51,7 +61,8 @@ if ( mysql_num_rows($result1) ) {
     </select><br>
     <input type='submit' name='submit' value='Submit'>
     </form>
-
+    </fieldset>
+<br>
 <?PHP
 
 if ( $check_email_take_action == 1 ) {

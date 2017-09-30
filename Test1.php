@@ -1,6 +1,12 @@
 <!DOCTYPE>
 <html>
 <head><title>Customer Main Page for DEMO</title>
+<link rel="stylesheet" type="text/css" href="format.css">
+<style type="text/css">
+legend {
+  background-color:#94221E;
+}
+</style>
 </head>
 <body>
 <?PHP
@@ -29,7 +35,10 @@ if (mysql_num_rows($result))
 <br>
 <br>
 <b>Select The Service That You Want</b><br>
+<fieldset bgcolor=#C9FFC9>
+<legend>Manager Area</legend>
 - <a href="products_list.php" target="_blank">Check and Order products</a><br>
 - <a href="check_order.php" target="_blank">Check your order</a>
+</fieldset>
 </body>
 </html>

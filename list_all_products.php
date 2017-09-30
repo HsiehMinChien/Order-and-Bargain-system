@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head><title>List All Products (DEMO System)</title>
+</style>
 </head>
 <body>
 <?php

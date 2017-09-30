@@ -49,7 +49,7 @@ if ( ($row_amount = mysql_num_rows($result)) && ($col_amount = mysql_num_fields(
         echo "Expect to Order: ";
         echo "<input type='value' name='P_amount' value='1'><br>";
         echo "Comment: ";
-        echo "<input type='text' name='P_comment' style='width:300px; height:100px;'><br>";
+        echo "<input type='text' name='P_comment' style='width:300px; height:100px;' placeholder='Type Comment'><br>";
         echo "<input type='submit' name='submit' value='Submit'>";
         echo "<input type='hidden' name='P_order' value='".$ticket."'><br>";
         echo "</form>";
@@ -61,7 +61,7 @@ if ( ($row_amount = mysql_num_rows($result)) && ($col_amount = mysql_num_fields(
         echo "Expectation Total Price: ";
         echo "<input type='value' name='P_total_price' value='".$data[5]."'><br>";
         echo "Comment: ";
-        echo "<input type='text' name='P_comment' style='width:300px; height:100px;'><br>";
+        echo "<input type='text' name='P_comment' style='width:300px; height:100px;' placeholder='Type Comment'><br>";
         echo "<input type='submit' name='submit' value='Submit'>";
         echo "<input type='hidden' name='status' value='Bargain'><br>";
         echo "<input type='hidden' name='P_order' value='".$ticket."'><br>";
